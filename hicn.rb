@@ -1,16 +1,16 @@
-class Libparc < Formula
-  desc "Libparc library"
-  homepage "https://github.com/FDio/cicn/blob/cframework/master/libparc/README.md"
-  url "https://github.com/FDio/cicn/archive/cframework/master.zip"
+class Hicn < Formula
+  desc "Hicn stack"
+  homepage ""
+  url "https://github.com/FDio/hicn/archive/master.zip"
   version "1.0"
   sha256 ""
   depends_on "cmake" => :build
-  depends_on "openssl@1.1"
-  depends_on "libevent"
-
+  depends_on "libparc"
+  depends_on "libcurl"
+  depends_on "asio"
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    system "cmake", "libparc", *std_cmake_args
+    system "cmake", ".", " -DBUILD_APPS=ON",*std_cmake_args
     system "make", "install" # if this fails, try separate make/make install steps
   end
 

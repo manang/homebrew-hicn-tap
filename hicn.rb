@@ -10,7 +10,8 @@ class Hicn < Formula
   depends_on "asio"
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    system "cmake", ".", " -DBUILD_APPS=ON",*std_cmake_args
+    system "ls -la"
+    system "cmake", ".", "-DBUILD_APPS=ON",*std_cmake_args
     system "make", "install" # if this fails, try separate make/make install steps
   end
 

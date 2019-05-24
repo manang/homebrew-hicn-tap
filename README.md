@@ -1,2 +1,2 @@
-# brew-tap
-Homebrew tap for custom formulas.
+# Hicn brew-tap
+Homebrew tap for hICN stack formulas.

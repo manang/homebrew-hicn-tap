@@ -1,4 +1,4 @@
-class Hicn < Formula
+class Hicn-master < Formula
   desc "Hicn stack"
   homepage "https://wiki.fd.io/view/HICN"
   url "https://github.com/FDio/hicn/archive/master.zip"

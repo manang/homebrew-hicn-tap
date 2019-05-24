@@ -6,7 +6,7 @@ class Hicn < Formula
   sha256 ""
   depends_on "cmake" => :build
   depends_on "libparc"
-  depends_on "libcurl"
+  depends_on "curl"
   depends_on "asio"
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
